@@ -1,0 +1,81 @@
+#main-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(246, 249, 250);
+    /* background-image: url(/images/code-bg.jpg); */
+    font-family: sans-serif, Times;
+}
+
+header{
+    background-color: rgb(19, 19, 70);
+}
+
+footer{
+    background-color: rgb(210, 228, 236);
+}
+
+nav ul{
+    list-style-type: none;
+    background-color: rgb(110, 137, 225);
+}
+
+nav ul li{
+    display: inline; 
+    color: black;
+    padding-right: 15px;
+    border-right: 1px solid black;
+}
+
+nav ul li:last-child{
+    border-right: 1px hidden;
+}
+
+table{
+    margin: 0 auto 0 auto;
+}
+
+th, td{
+    text-align: left;
+    width: 190px;
+    padding 10px;
+    border: 1px solid black;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+}
+
+.container-title{
+    position: absolute; 
+    bottom:8px; 
+    right:16px;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.main-nav{
+    text-align: right;
+}
+
+.foot-nav{
+    text-align: center;
+}
