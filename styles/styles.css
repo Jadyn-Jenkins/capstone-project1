@@ -15,33 +15,6 @@ header{
     background-color: rgb(19, 19, 70);
 }
 
-ul#flex-container{
-    list-style-type: none;
-    margin: 0; padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-/* ul li:first-child{background: red;}
-ul li:nth-child(2){background: blue;}
-ul li:nth-child(3){background: green;}
-ul li:nth-child(4){background: yellow;}
-ul li:nth-child(5){background: purple;}
-ul li:last-child{background: black;} */
-
-ul li{
-    flex-grow: 1;
-    width: 100px;
-    height: 150px;
-    padding-top: 45px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2.2e;
-    text-align: center;
-}
-
-
-
 #main-section {
     width: 80%;
     margin: 0 auto;
@@ -51,49 +24,15 @@ ul li{
     height: 280px;
     padding: 5px;
     margin: 0px 10px 0px 0px;
-    border: 1px solid  black;
-}
-
-a{
-    color: whitesmoke;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+    
+    
+    /* Box Shadow */
+    box-shadow: 0 1px 8px #ddd;
 }
 
 footer{
-    background-color: rgb(210, 228, 236);
-}
-
-nav{
-    background-color: rgb(110, 137, 225);
-    /* background-image: url(/images/test1.jpg); */
-    background-position: top center;
-    background-blend-mode: darken;
-    /* NEEDS A DIFFERENT FONT               font-family: ; */
-}
-
-nav img{
-    float: left;
-}
-
-nav ul{
-    list-style-type: none;  
-    padding: 30px 15px 30px 15px;
-}
-
-nav ul li{
-    display: inline; 
-    color: black;
-    padding: 10px 15px 10px 15px;
-    border-left: 1px solid black;
-}
-
-nav ul li:last-child{border-right: 1px hidden;}
-nav ul li:first-child{border-left: 1px hidden;}
-
-a:hover{
-    color: lightblue;
+    
+    /* background-color: rgb(210, 228, 236); */
 }
 
 .hero{
@@ -117,13 +56,15 @@ a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
     
+    /* Box Shadow */
+    box-shadow: 0 1px 8px #ddd;
 }
 
 .hero h1{
     /* text styles */
     font-size: 5em;
 
-    /* margins */
+    /* Margins */
     margin-top: .5em;
     margin-bottom: 0.5em;
 }
@@ -132,29 +73,90 @@ a:hover{
     font-size: 1.5em;
     /* NEEDS WORK overflow: normal; */
 }
+
 .hero-inner{
     margin-left: 16px;
 }
 
-/* .container{
-    position: relative;
-    text-align: center;
-    color: white;
-} */
+nav{
+    background-color:white;
+    /* background-image: url(/images/test1.jpg); */
+    background-position: top center;
+    background-blend-mode: darken;
+    /* NEEDS A DIFFERENT FONT               font-family: ; */
+}
 
-/* .container-title{
-    position: absolute; 
-    bottom:8px; 
-    right:16px;
-    font-size: 75px;
-    font-weight: bold;
-} */
+
+ul li{
+    flex-grow: 1;
+}
+nav a{
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav img{
+    height: 75px;
+}
+
+nav ul{
+    list-style: none;  
+    margin: 0px !important;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+
+.main-nav a:hover{
+    /* Turns text blue when hovered over */
+    color: rgb(107, 181, 206)!important;
+}
+
+.nav-item{
+    display: flex;
+}
+.nav-item:hover{
+    color: rgb(107, 181, 206);
+}
+.nav-link {
+    display: flex;
+}
 
 .main-nav{
-    text-align: right;
+    /* Flex Content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     
+    /* Margins n Padding */
+    padding: 0px 10px;
+    /* text-align: right; */
+
+    /* Makes nav bar stick to top of screen when scrolled past */
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+
+    /* Seperates main, footer and navbar background */
+    box-shadow: 0 1px 8px #ddd;
 }
 
 .foot-nav{
+    /* Flex Content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     text-align: center;
+
+    /* Seperates Foot Navbar and main background */
+    box-shadow: 0 1px 8px #ddd;
 }
