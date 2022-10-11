@@ -4,6 +4,13 @@
     outline: 1px solid black; */
 }
 
+ul#flex-container {
+    list-style: none;
+    margin: 0!important;Padding: 0!important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 html,body{
     
     background-color: rgb(246, 249, 250);
@@ -16,15 +23,23 @@ header{
 }
 
 #main-section {
-    width: 80%;
-    margin: 0 auto;
+    /* Section Layout Settings */
+    padding-top: 45px;
 }
 
 #main-section img{
+    /* Image Layout Settings */
     height: 280px;
     padding: 5px;
     margin: 0px 10px 0px 0px;
     
+    /* Image Size Format */
+    width:75%;
+    height:auto;
+    min-width: 250px;
+
+    /* Helps with Resize Rendering */
+    image-rendering: -webkit-optimize-contrast;
     
     /* Box Shadow */
     box-shadow: 0 1px 8px #ddd;
@@ -32,7 +47,6 @@ header{
 
 footer{
     
-    /* background-color: rgb(210, 228, 236); */
 }
 
 .hero{
@@ -71,7 +85,7 @@ footer{
 
 .hero h2{
     font-size: 1.5em;
-    /* NEEDS WORK overflow: normal; */
+    position: absolute;
 }
 
 .hero-inner{
@@ -86,7 +100,6 @@ nav{
     /* NEEDS A DIFFERENT FONT               font-family: ; */
 }
 
-
 ul li{
     flex-grow: 1;
 }
@@ -97,25 +110,24 @@ nav a{
     text-decoration: none;
 }
 
-nav img{
-    height: 75px;
-}
-
-nav ul{
-    list-style: none;  
-    margin: 0px !important;
-}
-
 nav li{
     display: inline-block;
-    padding: 0px 5px 0px 5px;
+    text-align: justify;
 }
 
-.main-nav a:hover{
-    /* Turns text blue when hovered over */
-    color: rgb(107, 181, 206)!important;
+nav li a{
+    align-items: right;
 }
 
+nav ul li img{
+    text-align: left;
+}
+
+
+
+.nav{
+    align-items: center;
+}
 .nav-item{
     display: flex;
 }
@@ -128,15 +140,13 @@ nav li{
 
 .main-nav{
     /* Flex Content */
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     
     /* Margins n Padding */
     padding: 0px 10px;
-    /* text-align: right; */
+   
 
     /* Makes nav bar stick to top of screen when scrolled past */
     position: sticky;
@@ -147,13 +157,23 @@ nav li{
     box-shadow: 0 1px 8px #ddd;
 }
 
+.main-nav img{
+    width:9em;
+    height:3.2em;
+}
+.main-nav a:hover{
+    /* Turns text blue when hovered over */
+    color: rgb(107, 181, 206)!important;
+}
+.foot-nav a:hover{
+    /* Turns text blue when hovered over */
+    color: rgb(107, 181, 206)!important;
+}
 .foot-nav{
     /* Flex Content */
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 
     text-align: center;
 
