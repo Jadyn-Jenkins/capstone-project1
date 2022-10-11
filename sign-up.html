@@ -28,22 +28,73 @@
     </nav >
 
     <div class="container-fluid"><div class="row">
-        <div class="col col-2">
+        <div class="col col-1">
             <!-- Space for comercials. Also keeps main-section centered opn screen -->
         </div>
 
-        <main id="main-section" class="col col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-            <div class="row justify-content-center">
-                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">c</div>
-                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">d</div>
-                <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">a</div>
-                <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">b</div>
-                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">c</div>
-                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">d</div>
-            </div>            
+        <main id="main-section" class="col-md-10 col-sm-8">
+            <!-- Username, password, password comfirmation -->
+            <div class="col-md-7 col-lg-8">
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                            
+                                <input type="text" class="form-control" id="username" placeholder="username" required="">
+                                <div class="invalid-feedback">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-6">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group has-validation"></div>
+                            <input type="password" class="form-control" id="password" placeholder="password">
+                            <div class="invalid-feedback">Please enter a valid password.</div>
+                        </div>  
+
+                        <div class="col-6">
+                            <label for="password-comfirm" class="form-label">Password Confirmation</label>
+                            <div class="input-group has-validation"></div>
+                            <input type="password" class="form-control" id="password-comfirm" placeholder="re-type password">
+                            <div class="invalid-feedback">Please enter the same password again.</div>
+                        </div>    
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="email" placeholder="Email@email.com" required="">
+                                <div class="invalid-feedback">
+                                    Your Email is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">How did you hear about us?</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>Word of Mouth</option>
+                                <option>Billboard</option>
+                                <option>TV Commercial</option>
+                                <option>Instagram</option>
+                                <option>Twitter</option>
+                                <option>Spotify</option>
+                                <option>Tiktok</option>
+                                <option>None of the Above</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                    Please select a valid Option.
+                              </div>
+                        </div>
+                    </div>
+                </form> 
+            </div>           
         </main>
 
-        <div class="col col-2">
+        <div class="col col-1">
             <!-- Space for comercials. Also keeps main-section centered opn screen -->
         </div>
         <footer class="py-3 my-5 foot-nav" >

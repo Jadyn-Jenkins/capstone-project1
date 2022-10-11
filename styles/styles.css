@@ -146,6 +146,7 @@ nav ul li img{
     
     /* Margins n Padding */
     padding: 0px 10px;
+    z-index: 3;
    
 
     /* Makes nav bar stick to top of screen when scrolled past */
@@ -179,4 +180,9 @@ nav ul li img{
 
     /* Seperates Foot Navbar and main background */
     box-shadow: 0 1px 8px #ddd;
+}
+
+[type="checkbox"]
+{
+    vertical-align:middle;
 }

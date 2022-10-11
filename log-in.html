@@ -28,60 +28,42 @@
     </nav >
 
     <div class="container-fluid"><div class="row">
-        <div class="col col-2">
+        <div class="col col-1">
             <!-- Space for comercials. Also keeps main-section centered opn screen -->
         </div>
 
-        <main id="main-section" class="col col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit odio ac dolor sollicitudin 
-                tincidunt. Phasellus vel volutpat mauris. Donec eget turpis et risus venenatis suscipit. Phasellus 
-                laoreet volutpat arcu, sit amet fermentum ipsum.
-                
-                In sagittis risus tempus metus dictum, fermentum 
-                vestibulum magna aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mattis 
-                vulputate gravida. Mauris molestie magna ante, eu vestibulum mi mattis sit amet. Vivamus erat eros, 
-                aliquam eget massa id, mattis vestibulum arcu.
+        <main id="main-section" class="col-md-10 col-sm-8">
+            <form class="needs-validation" novalidate="" style="position:right;">                <div class="row">
+                <div class="col col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <div class="invalid-feedback">
+                        Your username is required.
+                    </div>
+                    </div>
+                </div>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit odio ac dolor sollicitudin 
-                tincidunt. Phasellus vel volutpat mauris. Donec eget turpis et risus venenatis suscipit. Phasellus 
-                laoreet volutpat arcu, sit amet fermentum ipsum.
-                
-                In sagittis risus tempus metus dictum, fermentum 
-                vestibulum magna aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mattis 
-                vulputate gravida. Mauris molestie magna ante, eu vestibulum mi mattis sit amet. Vivamus erat eros, 
-                aliquam eget massa id, mattis vestibulum arcu.
+                <div> 
+                    <!-- Just to divide two lines of 5 col grid code -->
+                </div>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit odio ac dolor sollicitudin 
-                tincidunt. Phasellus vel volutpat mauris. Donec eget turpis et risus venenatis suscipit. Phasellus 
-                laoreet volutpat arcu, sit amet fermentum ipsum.
-                
-                In sagittis risus tempus metus dictum, fermentum 
-                vestibulum magna aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mattis 
-                vulputate gravida. Mauris molestie magna ante, eu vestibulum mi mattis sit amet. Vivamus erat eros, 
-                aliquam eget massa id, mattis vestibulum arcu.
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit odio ac dolor sollicitudin 
-                tincidunt. Phasellus vel volutpat mauris. Donec eget turpis et risus venenatis suscipit. Phasellus 
-                laoreet volutpat arcu, sit amet fermentum ipsum.
-                
-                In sagittis risus tempus metus dictum, fermentum 
-                vestibulum magna aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mattis 
-                vulputate gravida. Mauris molestie magna ante, eu vestibulum mi mattis sit amet. Vivamus erat eros, 
-                aliquam eget massa id, mattis vestibulum arcu.
-            </p>
-            <img src="/images/web3-display.jpg" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit odio ac dolor sollicitudin 
-                tincidunt. Phasellus vel volutpat mauris. Donec eget turpis et risus venenatis suscipit. Phasellus 
-                laoreet volutpat arcu, sit amet fermentum ipsum. In sagittis risus tempus metus dictum, fermentum 
-                vestibulum magna aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mattis 
-                vulputate gravida. Mauris molestie magna ante, eu vestibulum mi mattis sit amet. Vivamus erat eros, 
-                aliquam eget massa id, mattis vestibulum arcu.
-            </p>            
+                <div class="col col-sm-12 col-md-5 col-lg-5 col-xl-5 py-4">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group has-validation"></div>
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                    <div class="invalid-feedback">Please enter a valid password.</div>
+                </div> 
+                <div class="col col-12">
+                    <label for="remember-me" class="form-label" style="word-wrap: break-word;">Remember me?</label>
+                    <input type="checkbox" id="remember-me">
+                </div>
+                </div>      
+            </form>  
         </main>
-        <div class="col col-2">
+
+        <div class="col col-1">
             <!-- Space for comercials. Also keeps main-section centered opn screen -->
         </div>
         <footer class="py-3 my-5 foot-nav" >
