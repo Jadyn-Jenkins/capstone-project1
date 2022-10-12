@@ -1,188 +1,176 @@
-
-*{
-    /* To check Box Model Method
-    outline: 1px solid black; */
-}
-
-ul#flex-container {
-    list-style: none;
-    margin: 0!important;Padding: 0!important;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-html,body{
-    
+/* Body */
+html,
+body {
+    /* For a Paper-esque Feel */
     background-color: rgb(246, 249, 250);
-    /* background-image: url(/images/code-bg.jpg); */
     font-family: sans-serif, Times;
 }
 
-header{
-    background-color: rgb(19, 19, 70);
-}
-
+/* Main Section  */
 #main-section {
-    /* Section Layout Settings */
+    /* Position Settings */
     padding-top: 45px;
 }
 
-#main-section img{
-    /* Image Layout Settings */
-    height: 280px;
+#main-section img {
+    /* Position Settings */
     padding: 5px;
-    margin: 0px 10px 0px 0px;
-    
+    margin: 10px;
+
     /* Image Size Format */
-    width:75%;
-    height:auto;
+    width: 75%;
+    height: auto;
     min-width: 250px;
 
     /* Helps with Resize Rendering */
     image-rendering: -webkit-optimize-contrast;
-    
+
     /* Box Shadow */
     box-shadow: 0 1px 8px #ddd;
 }
 
-footer{
-    
-}
-
-.hero{
-    /* Sizeing */
+/* Hero */
+.hero {
+    /* Sizeing up Visit View */
     width: 100vw;
     height: 100vh;
 
-    /* Flexbox stuff */
+    /* Flexbox Settings */
     display: flex;
+
+    /* position Settings */
     justify-content: center;
     align-items: center;
 
-    /* text styles */
+    /* Font Settings */
     text-align: left;
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/page1-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/page1-bg.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-    /* Box Shadow */
-    box-shadow: 0 1px 8px #ddd;
 }
 
-.hero h1{
-    /* text styles */
+.hero h1 {
+    /* Font Settings */
     font-size: 5em;
 
-    /* Margins */
-    margin-top: .5em;
-    margin-bottom: 0.5em;
+    /* Position Setting */
+    margin: 0.5em 0px;
 }
 
-.hero h2{
+.hero h2 {
+    /* Font Settings */
     font-size: 1.5em;
-    position: absolute;
+
+
+    /* Position Settings */
+    margin: 0.5em 0px;
+    padding-right: 25%;
 }
 
-.hero-inner{
-    margin-left: 16px;
-}
-
-nav{
-    background-color:white;
-    /* background-image: url(/images/test1.jpg); */
-    background-position: top center;
-    background-blend-mode: darken;
-    /* NEEDS A DIFFERENT FONT               font-family: ; */
-}
-
-ul li{
+/* Navagation */
+ul li {
+    /*Flex Content Settings*/
     flex-grow: 1;
 }
-nav a{
-    color: black;
-    font-size: 20px;
-    font-weight: normal;
-    text-decoration: none;
+
+nav {
+    /* Background Settings */
+    background-color: white;
+    background-position: top center;
+    background-blend-mode: darken;
 }
 
-nav li{
-    display: inline-block;
-    text-align: justify;
-}
-
-nav li a{
-    align-items: right;
-}
-
-nav ul li img{
-    text-align: left;
-}
-
-
-
-.nav{
+.nav {
+    /* Position Settings */
     align-items: center;
 }
-.nav-item{
-    display: flex;
-}
-.nav-item:hover{
-    color: rgb(107, 181, 206);
-}
-.nav-link {
-    display: flex;
-}
 
-.main-nav{
-    /* Flex Content */
+.main-nav {
+    /* Position Settings */
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    
-    /* Margins n Padding */
     padding: 0px 10px;
     z-index: 3;
-   
 
     /* Makes nav bar stick to top of screen when scrolled past */
     position: sticky;
     top: 0px;
     bottom: 0px;
 
-    /* Seperates main, footer and navbar background */
+    /* Box Shadow Settings */
     box-shadow: 0 1px 8px #ddd;
 }
 
-.main-nav img{
-    width:9em;
-    height:3.2em;
+.stick-to-nav{
+    position: sticky;
+    top: 100px;
+    bottom: 0px;
 }
-.main-nav a:hover{
-    /* Turns text blue when hovered over */
-    color: rgb(107, 181, 206)!important;
+
+.main-nav img {
+    /* Image Size Format */
+    width: 9em;
+    height: 3.2em;
 }
-.foot-nav a:hover{
-    /* Turns text blue when hovered over */
-    color: rgb(107, 181, 206)!important;
+
+.main-nav a:hover {
+    /* UI Want */
+    color: rgb(107, 181, 206) !important;
 }
-.foot-nav{
-    /* Flex Content */
+
+.foot-nav img {
+    /* Image Size Format */
+    width: 13em;
+    height: 5em;
+}
+
+.foot-nav a:hover {
+    /* UI Want */
+    color: rgb(107, 181, 206) !important;
+}
+
+.foot-nav {
+    /* Position Settings */
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-
     text-align: center;
 
     /* Seperates Foot Navbar and main background */
     box-shadow: 0 1px 8px #ddd;
 }
 
-[type="checkbox"]
-{
-    vertical-align:middle;
+.foot-nav p {
+    /* Position Settings */
+    padding-top: 40px;
+}
+
+/* Something went wrong here FIX NEEDED*/
+footer {
+    /* To Veritical Center within Parent Element */
+    align-items: center;
+}
+
+/* Flexbox */
+ul#flex-container {
+    /* List Format */
+    list-style: none;
+
+    /* Format Settings */
+    margin: 0 !important;
+    Padding: 0 !important;
+
+    /* Flexbox ID Settings */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Checkbox */
+[type="checkbox"] {
+    /* Checkbox ID Position Settings */
+    vertical-align: middle;
 }
