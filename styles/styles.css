@@ -108,7 +108,7 @@ nav {
 
 .stick-to-nav{
     position: sticky;
-    top: 100px;
+    top: 80px;
     bottom: 0px;
 }
 
